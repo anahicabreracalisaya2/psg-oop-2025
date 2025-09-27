@@ -8,7 +8,7 @@ Clases:
         - chocolate
         - nueces
     - Métodos:
-        - (No hay métodos)
+        - ( No hay métodos )
   
 ```mermaid
 classDiagram
