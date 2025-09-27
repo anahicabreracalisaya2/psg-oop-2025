@@ -18,8 +18,8 @@ Características:
     - glaseado
 
 Acciones:
-- (No hay acciones)
-# Diseño:
+- ( No hay acciones)
+# Diseño :
 
 Clases:
 - Galleta 💟:

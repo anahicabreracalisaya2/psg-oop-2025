@@ -63,7 +63,7 @@ Un tomate es una fruta roja, dulce y redonda.
 - Cantidad de jugo (jugosidad)
 # características importantes  para un nutricionista
 - Porcentaje de agua (hidratación)
-- Porcentaje de fibra (fibra)
+- Porcentaje de fibra ( fibra )
 - Porcentaje de carbohidratos (carbohidratos)
 - Porcentaje de proteínas (proteínas)
 - Porcentaje de grasas (grasas)

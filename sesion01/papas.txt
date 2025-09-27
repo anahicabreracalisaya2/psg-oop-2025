@@ -13,4 +13,4 @@ Para un distribuidor de papas fritas:
 - Tamaño de las papas (tamaño)
 - Estado de las papas si son frescas congeladas (estado)
 - Tipo o estilo de corte (corte)
-- Precio por kilo (precio)
+- Precio por kilo ( precio )

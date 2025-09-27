@@ -12,7 +12,7 @@ Objetos:
 - tomate 🍅
 Características:
 - Huerto: ubicación, fotos
-- Tomate: color, peso, especie
+- Tomate: color,peso,especie
 Acciones:
 - ver fotos
 - ver ubicaciones

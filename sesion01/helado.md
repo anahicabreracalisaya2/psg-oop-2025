@@ -2,7 +2,7 @@ Una heladería ofrece helados
 Los clientes eligen entre helado de vainilla o fresa
 Pueden agregar chispas de chocolate y caramelo líquido como extra
 Puede llevarse en barquillo o vaso y tener hasta 3 bolitas
-# Análisis
+#  Análisis
 
 Requisitos:
 - Ofrece helados de vainilla o fresa

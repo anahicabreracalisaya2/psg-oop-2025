@@ -18,7 +18,7 @@ Características:
     - chocolate
 
 Acciones:
-- (No hay acciones)
+- (No hay acciones )
 # Diseño:
 
 Clases:
@@ -29,4 +29,4 @@ Clases:
         - chocolate
         - nueces
     - Métodos:
-        - (No hay métodos)
+        - ( No hay métodos )
