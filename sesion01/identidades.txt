@@ -1,0 +1,70 @@
+🎼 Stay - Rihanna & Mikky Ekko
+
+Características:
+Título: Stay
+Artista: Rihanna, Mikky Ekko
+Duración: 4:00
+Género: Pop
+Año: 2013
+
+Comportamiento:
+Reproducir
+Pausar
+Detener
+Subir volumen
+Bajar volumen
+Repetir
+
+Identidad:
+- Stay, Rihanna & Mikky Ekko, Pop, 2013
+Características:
+Título: Stay
+Artista: The Kid LAROI, Justin Bieber
+Duración: 2:21
+Género: Pop, Hip-hop
+Año: 2021
+
+Comportamiento:
+Reproducir
+Pausar
+Detener
+Subir volumen
+Bajar volumen
+Repetir
+
+Identidad:
+- Stay, The Kid LAROI & Justin Bieber, Pop / Hip-hop, 2021
+Comparación de identidades
+Aunque ambas canciones se llamen "Stay"
+el resto de sus características los hacen diferentes.
+Ahora abordaremos un concepto fundamental en la programación orientada a objetos:
+
+Abstracción
+
+#CARACTERISTICAS DE UN TOMATE
+Un tomate es una fruta (tipo)
+Un tomate es rojo (color)
+Un tomate es dulce (sabor)
+Un tomate es redondo (forma)
+ 
+Un tomate es una fruta roja, dulce y redonda.
+# características importantes  para un granjero
+Un tomate es una fruta (tipo)
+Un tomate es rojo (color)
+Un tomate es dulce (sabor)
+Un tomate es redondo (forma)
+Un tomate es una fruta roja, dulce y redonda.
+# características importantes  para un chef
+- Color del tomate (color)
+- Tamaño del tomate (tamaño)
+- Textura del tomate (textura)
+- Forma del tomate (forma)
+- Porcentaje de azúcar (sabor)
+- Cantidad de jugo (jugosidad)
+# características importantes  para un nutricionista
+- Porcentaje de agua (hidratación)
+- Porcentaje de fibra (fibra)
+- Porcentaje de carbohidratos (carbohidratos)
+- Porcentaje de proteínas (proteínas)
+- Porcentaje de grasas (grasas)
+- Porcentaje de vitaminas (vitaminas)
