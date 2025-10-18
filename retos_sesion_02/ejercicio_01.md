@@ -18,21 +18,21 @@ Objetos:
 
 Características:
 - Animal
+    - Origen
     - Especie
     - Tipo
     - Lugar
-    - Origen
+    
 
 Acciones:
 - (No hay acciones)
 
 ```mermaid	
 classDiagram
-    class Mascota {
-        
+    class Animal {
+        String Origen
         String Especie
         String Tipo
         String Lugar
-        String Origen
     }
 ```
