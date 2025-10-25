@@ -15,13 +15,14 @@ Características:
   - velocidad: Int
   - medio: String (terrestre, acuatico, aéreo)
 - Avion:
-  - velocidad: Int (hereda) 
+  - medio: String 
 - Bicicleta
-  - velocidad: Int (hereda)
+  - medio: String 
 Acciones:
 - Vehiculo:
   - getVelocidad()
   - setMedio()
+  - mostrar()
 - Avion:
   - volar()
 - Bicicleta:
@@ -33,6 +34,7 @@ classDiagram
         +medio: String
         +getVelocidad(): Int
         +setMedio(medio)
+
     }
     class Bicicleta {
         +pedalear()

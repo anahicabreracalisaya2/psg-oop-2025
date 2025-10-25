@@ -1,4 +1,3 @@
-# Definición
 class Vehiculo:
     def __init__(self, medio):
         self._velocidad = 0  
@@ -59,7 +58,7 @@ print("¿bici es Bicicleta?", isinstance(bici, Bicicleta))
 print("¿bici es Vehiculo?", isinstance(bici, Vehiculo))
 print("¿bici es Avion?", isinstance(bici, Avion))
 
-# 🔍 issubclass()
+# issubclass()
 print("¿Bicicleta es Vehiculo?", issubclass(Bicicleta, Vehiculo))
 print("¿Avion es Vehiculo?", issubclass(Avion, Vehiculo))
 print("¿Avion es Bicicleta?", issubclass(Avion, Bicicleta))
