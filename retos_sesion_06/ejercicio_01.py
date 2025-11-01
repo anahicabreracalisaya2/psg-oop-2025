@@ -46,17 +46,19 @@ class Minibus:
             for p in self.pasajeros:
                 p.info()
 
-# Uso
+# Uso del Ejercicio
 minibus = Minibus("381", ["Arce", "Prado", "Perez"])
 p1 = Pasajero("Saul", "Prado")
 p2 = Pasajero("Amanda", "Perez")
-p3 = Pasajero("Samuel", "Camacho")  
+p3 = Pasajero("Samuel", "Camacho")
+
 print("\nSubiendo pasajeros:")
 minibus.subir_pasajero(p1)
 minibus.subir_pasajero(p2)
 minibus.subir_pasajero(p3)
 print("\nEstado  del minibús:")
 minibus.mostrar_pasajeros()
+
 print("\nRecorrido del minibús:")
 for i in range(4):
     minibus.mover()
