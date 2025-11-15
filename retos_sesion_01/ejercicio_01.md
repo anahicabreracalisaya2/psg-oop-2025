@@ -2,7 +2,7 @@
 
 Requisitos:
 - ofrecer hamburguesas de res, pollo y vegetarianas
-- los bombones pueden acompañarse de lechuga, tomate, cebolla y mayonesa
+- las hamburguesas pueden acompañarse de lechuga, tomate, cebolla y mayonesa
 - las hamburguesas pueden consumirse en el restaurante o para llevar
 
 Objetos:
