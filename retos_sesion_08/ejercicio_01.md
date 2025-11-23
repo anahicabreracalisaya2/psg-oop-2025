@@ -22,14 +22,13 @@ Características
 Acciones
 - Fraccion: representación
 - Fraccion: suma, resta, multiplicación, división
-- Fraccion: comparaciones menor, mayor y desigualdad
+- Fraccion: comparaciones igualdad, menor, mayor y desigualdad
 ```mermaid
 classDiagram
     class Fraccion {
         +numerador: int
         +denominador: int
         +__str__()
-        +simplificar()
         +__add__()
         +__sub__()
         +__mul__()

@@ -1,6 +1,6 @@
 # Definición
 class Destino:
-    def __init__(self, nombre, costo):  # Constructor
+    def __init__(self, nombre, costo): 
         self.nombre = nombre
         self.costo = float(costo)
 
@@ -8,8 +8,8 @@ class Destino:
         return f"[{self.nombre}] ➡ {self.costo} USD"
 
 class Catalogo:
-    def __init__(self):  # Constructor
-        self.destinos = []  # Lista de destinos
+    def __init__(self): 
+        self.destinos = []  
 
     def __str__(self):
         texto = "🗺 Destinos 🗺\n"
@@ -28,7 +28,7 @@ class Catalogo:
     def __delitem__(self, indice):  
         del self.destinos[indice]
 
-    def __iter__(self):  # Iteración
+    def __iter__(self):  
         return iter(self.destinos)
 
 

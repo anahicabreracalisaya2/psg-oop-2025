@@ -1,5 +1,4 @@
 # Análisis
-
 Requisitos
 - La agencia necesita gestionar un catálogo digital de destinos turísticos.
 - Cada destino debe tener un nombre y un costo.
@@ -29,12 +28,11 @@ Características
 
 Acciones
 - Destino: representación
-- Catalogo: losgitud y representacion
+- Catalogo: longitud y representacion
 - Catalogo: acceso a destinos por indice, agregar, modificar, eliminar, iterar un destino.
 
 ```mermaid
 classDiagram
-   classDiagram
     class Destino {
         + nombre: string
         + costo: float
@@ -50,6 +48,5 @@ classDiagram
         + __delitem__()
         + __iter__()
     }
-
     Catalogo o-- Destino
 ```

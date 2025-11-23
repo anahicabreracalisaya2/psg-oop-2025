@@ -9,7 +9,6 @@ class Fraccion:
 
     def __str__(self):
         return f"{self.numerador}/{self.denominador}"
-
     def __add__(self, otro):
         nuevo_num = self.numerador * otro.denominador + otro.numerador * self.denominador
         nuevo_den = self.denominador * otro.denominador
