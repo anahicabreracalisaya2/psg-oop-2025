@@ -7,15 +7,13 @@ Las camisetas tienen las tallas: S, M, L, XL
 Los pantalones tienen las tallas desde la 32 hasta la 44
 # Análisis
 Requisitos:
-- ofrecer dos tipos de prenda: camisetas y pantalones
-- Ofrecer prendas que puedan modificarse segun las opciones
-- elegir camisetas de manga corta o larga
-- elegir camiseras de color rojo, azul y verde
-- elegir camiseras de talla S, M, L y XL
-- ofrecer los pantalones de tela: mezclilla o tela
-- ofrecer el color del pantalon negro, gris o blanco
+- Ofrece dos tipos de prenda: camisetas y pantalones
+- Ofrecer camisetas de manga corta o larga
+- Ofrecer camisetas de color rojo, azul y verde
+- Ofecer camisetas de talla S, M, L y XL
+- Ofrecer los pantalones de tela: mezclilla o tela
+- Ofrecer el color del pantalon negro, gris o blanco
 - Ofrecer la talla del pantalon de la 32 al 44
-- Ver si la prenda esta disponible
 
 Objetos:
 - Camiseta
