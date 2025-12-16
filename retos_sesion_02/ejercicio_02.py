@@ -1,9 +1,9 @@
 class Vino:
-    def __init__(self, nombre, tipo, cepa, anio):
+    def __init__(self, nombre, tipo, cepa, anio_produccion):
         self.nombre = nombre
         self.tipo = tipo
         self.cepa = cepa
-        self.anio = anio
+        self.anio_produccion = anio_produccion
 class Queso:
     def __init__(self, nombre, variedad, edad, sal):
         self.nombre = nombre
@@ -25,38 +25,14 @@ queso3 = Queso("Chaqueño", "Semi-duro", 6, True)
 # Mostrar vinos
 
 print("Vinos en inventario:")
-print("Vino 1: ", vino1.nombre)     
-print(vino1.tipo)
-print(vino1.cepa)       
-print(vino1.anio)
-print("Vino 2: ", vino2.nombre)
-print(vino2.tipo)
-print(vino2.cepa)
-print(vino2.anio)
-print("Vino 3: ", vino3.nombre)
-print(vino3.tipo)
-print(vino3.cepa)
-print(vino3.anio)
-print("Vino 4: ", vino4.nombre)
-print(vino4.tipo)
-print(vino4.cepa)
-print(vino4.anio)
-
-# Mostrar quesos
-
+print("Vino 1: ", vino1.nombre,vino1.tipo, vino1.cepa, vino1.anio_produccion)     
+print("Vino 2: ", vino2.nombre, vino2.tipo, vino2.cepa, vino2.anio_produccion)
+print("Vino 3: ", vino3.nombre, vino3.tipo, vino3.cepa, vino3.anio_produccion)
+print("Vino 4: ", vino4.nombre, vino4.tipo, vino4.cepa, vino4.anio_produccion)
 print("Quesos en inventario:")
-print("Queso 1: ", queso1.nombre)
-print(queso1.variedad)
-print(queso1.edad)
-print(queso1.sal)
-print("Queso 2: ", queso2.nombre)
-print(queso2.variedad)
-print(queso2.edad)
-print(queso2.sal)
-print("Queso 3:", queso3.nombre)
-print(queso3.variedad)
-print(queso3.edad)
-print(queso3.sal)
+print("Queso 1: ", queso1.nombre,queso1.variedad, queso1.edad, queso1.sal)
+print("Queso 2: ", queso2.nombre, queso2.variedad, queso2.edad, queso2.sal)
+print("Queso 3:", queso3.nombre, queso3.variedad, queso3.edad, queso3.sal)
 
  
       
