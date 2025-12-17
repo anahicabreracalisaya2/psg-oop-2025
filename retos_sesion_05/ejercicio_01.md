@@ -1,39 +1,73 @@
-Requisitos funcionales
-- Registrar vehículos en la simulación.
-- Consultar y modificar el medio de desplazamiento.
-- Consultar la velocidad (modificación solo mediante acciones específicas).
-- Bicicleta puede pedalear para aumentar velocidad.
-- Avión puede volar para aumentar velocidad.
-
+# Análisis
+Requisitos:
+- Registrar el comportamiento de los vehiculos
+- Un vehiculo tiene velocidad 
+- Lavelocidad es un dato protegido
+- Se consulta la velocidad pero se modifica con accciones
+- Un vehiculo tiene un medio (terrestre, acuatico y aereo)
+- El medio se consulta y se modifica
+- Una bicicleta es un vehiculo
+- La bicicleta aumenta la velocidad cuando se pedalea
+- Un avion es un vehiculo
+- El avion aumenta la velocidad cuando vuela 
 Objetos:
 - Vehiculo (clase padre)
 - Bicicleta (clase hija)
 - Avion (clase hija)
-- Reptil (clase hija)
+
 Características:
 - Vehiculo:
-  - velocidad: Int
+  - velocidad: int
   - medio: String (terrestre, acuatico, aéreo)
-- Avion:
-  - medio: String 
-- Bicicleta
-  - medio: String 
+
 Acciones:
 - Vehiculo:
-  - getVelocidad()
-  - setMedio()
+  - get_velocidad()
+  - set_velocidad(accion)
+  - get_medio()
+  - set_medio()
   - mostrar()
 - Avion:
   - volar()
+  - mostrar()
 - Bicicleta:
   - pedalear()
+  - mostrar()
+
+# Diseño:
+Clases:
+- Vehiculo :
+    - Nombre: Vehiculo
+    - Atributos:
+          - velocidad
+          - medio
+    - Métodos:
+          - get_velocidad()
+          - set_velocidad(accion)
+          - get_medio()
+          - set_medio()
+          - mostrar()
+- Avion :
+    - Nombre: Avion 
+    - Atributos: Sin atributos
+    - Métodos:
+          - volar()
+          - mostrar()
+- Vicicleta:
+    - Nombre: Bicicleta 
+    - Atributos: Sin atributos
+    - Métodos:
+          - pedalear()
+          - mostrar()
 ```mermaid
 classDiagram
     class Vehiculo {
-        -velocidad: Int
+        #velocidad: Int
         +medio: String
-        +getVelocidad(): Int
-        +setMedio(medio)
+        +get_velocidad()
+        +set_velocidad(accion)
+        +get_medio
+        +set_medio(medio)
 
     }
     class Bicicleta {
