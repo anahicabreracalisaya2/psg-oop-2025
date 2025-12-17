@@ -1,62 +1,57 @@
 class Nadador:
-    def __init__(self, estilo_nado):
-        self.estilo_nado = estilo_nado
-
+    def __init__(self, habilidad):
+        self.habilidad = habilidad
     def nadar(self):
-        print(f"Nadando con estilo: {self.estilo_nado} 🐠")
+        print("Este personaje está nadando 🏊‍♂️")
+    def mostrar(self):
+        print(f"Habilidad: {self.habilidad}")
 
 
 class Volador:
-    def __init__(self, tipo_vuelo):
-        self.tipo_vuelo = tipo_vuelo
-
+    def __init__(self, habilidad):
+        self.habilidad = habilidad
     def volar(self):
-        print(f"Volando con tipo de vuelo: {self.tipo_vuelo} 🕊️")
-
+        print("Este personaje está volando 🕊️")
+    def mostrar(self):
+        print(f"Habilidad: {self.habilidad}")
 
 
 class Pez(Nadador):
-    def __init__(self, estilo_nado):
-        super().__init__(estilo_nado)
-
+    def __init__(self, habilidad, tipo):
+        super().__init__(habilidad)
+        self.tipo = tipo
     def mostrar(self):
-        print("Personaje: Pez")
-        print(f"Habilidad: Nadar ({self.estilo_nado})")
+        super().mostrar()
+        print(f"Tipo: {self.tipo}")
         self.nadar()
 
 
 class Pajaro(Volador):
-    def __init__(self, tipo_vuelo):
-        super().__init__(tipo_vuelo)
-
+    def __init__(self, habilidad, tipo):
+        super().__init__(habilidad)
+        self.tipo = tipo
     def mostrar(self):
-        print("Personaje: Pájaro")
-        print(f"Habilidad: Volar ({self.tipo_vuelo})")
+        super().mostrar()
+        print(f"Tipo: {self.tipo}")
         self.volar()
 
 
 class Pato(Nadador, Volador):
-    def __init__(self, estilo_nado, tipo_vuelo):
-        Nadador.__init__(self, estilo_nado)
-        Volador.__init__(self, tipo_vuelo)
-
+    def __init__(self, habilidad, tipo):
+        super().__init__(habilidad)  # Llama al constructor de Nadador
+        self.tipo = tipo
     def mostrar(self):
-        print("Personaje: Pato")
-        print(f"Habilidades: Nadar ({self.estilo_nado}) y Volar ({self.tipo_vuelo})")
-        self.nadar()
-        self.volar()
+        super().mostrar()  # Llama a mostrar() de Nadador por MRO
+        print(f"Tipo: {self.tipo}")
+        self.nadar()       # El pato nada
+        self.volar()       # Y también vuela
 
 
 # Aplicación
-pez = Pez("rápido")
-pajaro = Pajaro("planeado")
-pato = Pato("calmado", "veloz")
+pez = Pez("rápido", "de agua dulce")
+pajaro = Pajaro("planeado", "de rapiña")
+pato = Pato("calmado", "silvestre")
 
-print("🐟 PEZ")
 pez.mostrar()
-
-print("\n🐦 PÁJARO")
 pajaro.mostrar()
-
-print("\n🦆 PATO")
 pato.mostrar()

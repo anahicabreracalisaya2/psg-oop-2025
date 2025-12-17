@@ -5,10 +5,13 @@ Pez: tiene la habilidad de nadar. Pájaro: tiene la habilidad de volar. Pato: ti
 
 # Requisitos
 - Desarrollar un videojuego
-- Crear personajes con habilidades específicas.
+- Crear personajes con habilidades.
 - Cada personaje puede tener una o más habilidades: nadar y/o volar.
-- Las habilidades son nadar o volar.
-- Cada personaje muestra su tipo de personaje y sus habilidades.
+- El juego tiene 3 personajes: pez, pájaro y pato
+- El pez nada
+- El pájaro vuela
+- El pato nada y vuela
+- Cada personaje tiene el metodo mostrar (tipo y habilidad).
 
 Objetos:
 - Nadador (clase padre)
@@ -22,39 +25,48 @@ Características:
 - Volador:
   - habilidad: String
 - Pez
-   - (sin características)
+  - tipo: String
 - Pajaro
-   - (sin características)
+  - tipo: String
 - Pato
-   - (sin características)
+  - tipo: String
 Acciones:
 - Nadador:
   - nadar()
+  - mostrar()
 - Volador:
   - volar()
+  - mostrar()
 - Pez
    - mostrar()
 - Pajaro
    - mostrar()
 - Pato
-   - mostrtar()
+   - mostrar()
 
 ```mermaid
 classDiagram
     class Nadador {
-        +nadar()
+        + habilidad: String
+        + nadar()
+        + mostrar()
     }
     class Volador {
-        +volar()
+        + habilidad: String
+        + volar()
+        + mostrar()
     }
     class Pez {
-        +mostrar()
+        + tipo: String
+        + mostrar()
     }
     class Pajaro {
-        +mostrar()
+        + tipo: String
+        + mostrar()
     }
     class Pato {
-        +mostrar()
+        + tipo: String        
+        + mostrar()
     }
 
     Nadador <|-- Pez
