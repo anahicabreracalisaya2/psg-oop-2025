@@ -2,18 +2,14 @@
 Requisitos:
 - Representar un edificio con nombre y dirección.
 - El edificio contiene 3 pisos, cada uno identificado por su número.
-- Cada piso puede tener:
-  - Departamentos: numerados con el piso seguido de unidad (ej. 201, 304).
-  - Oficinas: numeradas con el piso seguido de letra (ej. 2A, 3C).
-- Los departamentos tienen una lista de inquilinos.
-- Las oficinas tienen un número de teléfono.
-- El sistema debe permitir:
-  - Crear el edificio con sus pisos.
-  - Agregar departamentos y oficinas a cada piso.
-- Mostrar la información del edificio de forma jerárquica
-
-
-
+- Cada piso puede tener:departamento y/o oficianas
+- Departamentos: numerados 
+- Oficinas: numeradas con el piso seguido de letra
+- El edificio tiene direccion y nombre
+- los pisos tienen numero
+- las oficinas tienen teléfono
+- los departamentos tienen inquilino
+- Se debe acceder y mostrar informacion del edificio
 
 Objetos:
 - Piso
@@ -31,9 +27,9 @@ Características:
 - Oficina
     - numero: string
     - telefono: int
-- Cuerpo:
+- Edificio:
+    - direccion: String
     - nombre: String
-    - corazón: Corazón
 Acciones:
 - Piso:
     - agregar_departamento(departamento:departamento)
