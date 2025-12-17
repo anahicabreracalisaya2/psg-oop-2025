@@ -1,10 +1,9 @@
 # Análisis
-- Representar minibuses con número de ruta y lista de paradas.
+- Representar minibuses con número de ruta y paradas
 - Representar pasajeros con nombre y destino.
-- Permitir que un pasajero suba al minibús si su destino está en el recorrido.
-- Permitir que un pasajero baje si la parada actual coincide con su destino.
+- El pasajero se sube si coincide su destino en alguna parada
+- El pasajero puede bajar si la parada coincide con el destino
 - Invertir el recorrido al llegar al final (recorrido circular).
-- Mostrar el estado actual del minibús y sus pasajeros.
 
 # Características
 - Pasajero:
@@ -15,9 +14,7 @@
     - paradas: String
     - pasajeros: List[Pasajero]
 
-Acciones:
-- Pasajero:
-  - info()
+Acciones
 - Minibus:
   - subir_pasajero()
   - bajar_pasajero()
@@ -28,7 +25,6 @@ classDiagram
     class Pasajero {
         +nombre: String
         +destino: String
-        +info()
     }
 
     class Minibus {

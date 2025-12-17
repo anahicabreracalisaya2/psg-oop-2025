@@ -12,17 +12,24 @@ class Minibus:
         self.ruta = ruta
         self.paradas = paradas
         self.pasajeros = []
-        self.indica_parada = 0
-        self.direccion = 1  # 1: adelante, -1: atrás
+        self.indica_parada = 0      # índice de la parada actual
+        self.sentido = 1            # 1 = ida, -1 = vuelta
 
     def parada_actual(self):
         return self.paradas[self.indica_parada]
 
     def mover(self):
-        self.indica_parada += self.direccion
-        if self.indica_parada >= len(self.paradas) or self.indica_parada < 0:
-            self.direccion *= -1
-            self.indica_parada += self.direccion * 2  # retroceder dos pasos
+        """Avanza a la siguiente parada e invierte sentido si llega al final."""
+        self.indica_parada += self.sentido
+        if self.indica_parada == len(self.paradas):
+            self.sentido = -1
+            self.indica_parada = len(self.paradas) - 2
+
+        elif self.indica_parada < 0:
+            self.sentido = 1
+            self.indica_parada = 1
+
+        print(f"\n🚌 El minibús llegó a la parada: {self.parada_actual()}")
 
     def subir_pasajero(self, pasajero):
         if pasajero.destino in self.paradas:
@@ -34,20 +41,22 @@ class Minibus:
     def bajar_pasajeros(self):
         parada = self.parada_actual()
         bajan = [p for p in self.pasajeros if p.destino == parada]
+
         for p in bajan:
-            print(f" {p.nombre} ha bajado en {parada}.")
+            print(f"⬇️ {p.nombre} ha bajado en {parada}.")
             self.pasajeros.remove(p)
 
     def mostrar_pasajeros(self):
-        print(f" Minibús Ruta {self.ruta} - Parada actual: {self.parada_actual()}")
+        print(f"\n🚌 Minibús Ruta {self.ruta} - Parada actual: {self.parada_actual()}")
         if not self.pasajeros:
             print("No hay pasajeros a bordo.")
         else:
+            print("Pasajeros a bordo:")
             for p in self.pasajeros:
                 p.info()
 
-# Uso del Ejercicio
 minibus = Minibus("381", ["Arce", "Prado", "Perez"])
+
 p1 = Pasajero("Saul", "Prado")
 p2 = Pasajero("Amanda", "Perez")
 p3 = Pasajero("Samuel", "Camacho")
@@ -56,11 +65,12 @@ print("\nSubiendo pasajeros:")
 minibus.subir_pasajero(p1)
 minibus.subir_pasajero(p2)
 minibus.subir_pasajero(p3)
-print("\nEstado  del minibús:")
+
+print("\nEstado del minibús:")
 minibus.mostrar_pasajeros()
 
 print("\nRecorrido del minibús:")
-for i in range(4):
+for i in range(6):
     minibus.mover()
     minibus.bajar_pasajeros()
     minibus.mostrar_pasajeros()
