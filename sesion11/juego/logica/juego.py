@@ -24,3 +24,4 @@ class Juego:
         self.mostrar_elecciones(self.computadora, eleccion_computadora)
         resultado = self.determinar_ganador(eleccion_jugador, eleccion_computadora)
         print(resultado)
+        
